@@ -15,10 +15,24 @@
         <a class="brand" href="#top" aria-label="Graphic Design Club home">
           <img src="./assets/desktop-logo.svg" alt="Graphic Design Club" />
         </a>
-        <button class="menu-button" aria-label="Open menu"><span></span><span></span><span></span></button>
+        <button class="menu-button" type="button" aria-label="Open menu" aria-controls="site-menu" aria-expanded="false"><span></span><span></span><span></span></button>
       </nav>
 
       <img class="nav-decal" src="./assets/desktop-nav-decal.svg" alt="" aria-hidden="true" />
+
+      <aside class="site-menu" id="site-menu" aria-hidden="true" aria-label="Site menu">
+        <button class="menu-close" type="button" aria-label="Close menu"><span></span><span></span></button>
+        <nav class="site-menu-links" aria-label="Menu links">
+          <a href="#top">TODAY’S FEATURE</a>
+          <a href="#upcoming-events">EVENTS</a>
+          <a href="#about">ABOUT</a>
+          <a href="#crew">OUR CREW</a>
+          <a href="#for-you">FOR YOU</a>
+          <a href="#activities">ACTIVITIES</a>
+          <a href="#get-involved">GET INVOLVED</a>
+          <a href="#more">MORE</a>
+        </nav>
+      </aside>
 
       <section class="hero section" id="top">
         <div class="hero-copy">
@@ -52,7 +66,7 @@
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus commodo vestibulum rhoncus. Curabitur a ipsum quam. Etiam dictum luctus velit, vel bibendum est semper vel. Nullam ac suscipit dui. Quisque elementum eu nisl ac gravida. Ut semper luctus massa eget accumsan. Suspendisse dictum nunc nec tincidunt pretium.</p>
       </section>
 
-      <section class="section crew">
+      <section class="section crew" id="crew">
         <div class="section-heading yellow">OUR CREW</div>
         <div class="crew-grid">
           <article class="crew-card"><div class="crew-photo" aria-label="Crew photo placeholder"></div><p><strong>FIRST/LAST NAME</strong><span>JOB TITLE</span></p></article>
@@ -62,13 +76,13 @@
         <img class="section-decal yellow-decal" src="./assets/yellow-decal.svg" alt="" aria-hidden="true" />
       </section>
 
-      <section class="section for-you">
+      <section class="section for-you" id="for-you">
         <div class="section-heading yellow">FOR YOU!</div>
         <p>Tools, design resources, interviews, and more! Help provided to you for that extra helping hand!</p>
         <div class="resource-grid">
-          <article class="resource-card"><div class="placeholder-image"></div><h3>TUTORIALS</h3><p>A variety of helpful videos to teach you the foundations of the Adobe suite.</p><a href="#activities">See full library</a></article>
-          <article class="resource-card"><div class="placeholder-image"></div><h3>DESIGN RESOURCES</h3><p>Digital assets, tools, templates and references to help you design more efficiently.</p><a href="#activities">See full library</a></article>
-          <article class="resource-card"><div class="placeholder-image"></div><h3>INTERVIEWS</h3><p>Learn how designers near you grew into who they are today.</p><a href="#activities">See full library</a></article>
+          <article class="resource-card"><div class="resource-card-content"><div class="placeholder-image"></div><h3>TUTORIALS</h3><p>A variety of helpful videos to teach you the foundations of the Adobe suite.</p><a href="#activities">See full library</a></div><img class="resource-card-corners" src="./assets/variant-resource-corners.svg" alt="" aria-hidden="true" /></article>
+          <article class="resource-card"><div class="resource-card-content"><div class="placeholder-image"></div><h3>DESIGN RESOURCES</h3><p>Digital assets, tools, templates and references to help you design more efficiently.</p><a href="#activities">See full library</a></div><img class="resource-card-corners" src="./assets/variant-resource-corners.svg" alt="" aria-hidden="true" /></article>
+          <article class="resource-card"><div class="resource-card-content"><div class="placeholder-image"></div><h3>INTERVIEWS</h3><p>Learn how designers near you grew into who they are today.</p><a href="#activities">See full library</a></div><img class="resource-card-corners" src="./assets/variant-resource-corners.svg" alt="" aria-hidden="true" /></article>
         </div>
       </section>
 
@@ -96,7 +110,7 @@
         <img class="section-decal pink-decal get-involved-pink-decal" src="./assets/pink-decal.svg" alt="" aria-hidden="true" />
       </section>
 
-      <section class="section more">
+      <section class="section more" id="more">
         <div class="section-heading pink">MORE</div>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus commodo vestibulum rhoncus. Curabitur a ipsum quam. Etiam dictum luctus velit, vel bibendum est semper vel.</p>
       </section>
